@@ -11,13 +11,13 @@
         // GÓMEZ MUÑOZ CAROLINA EDITH 3-I
     var elementos_primos = new Array();
 
-    for (let i = 1; i < 1000; i++) {
+    for (let i=1; i<1000; i++) {
     elementos_primos.push(1);
     }
 
-    for (var i = 2; i < 1000; i++) {
-        if (elementos_primos[i] == 1) {
-            for (let j = i * i; j < 1000; j += i) {
+    for (var i=2; i<1000; i++) {
+        if (elementos_primos[i]==1) {
+            for (let j =i*i; j<1000; j+=i) {
                 elementos_primos[j] = 0;
             }
             console.log(i);
