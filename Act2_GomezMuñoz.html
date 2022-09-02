@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coladera de Eratostenes</title>
+</head>
+<body>
+    <script>
+        // GÓMEZ MUÑOZ CAROLINA EDITH 3-I
+    var elementos_primos = [1];
+
+    for (let i=1; i<1000; i++) {
+    elementos_primos.push(1);
+    }
+
+    for (var i=2; i<1000; i++) {
+        if (elementos_primos[i]!=0) {
+            for (let j =i+i; j<1000; j+=i) {
+                if (elementos_primos[i]!=0) {
+                elementos_primos[j] = 0;
+                }
+            }
+            console.log(i);
+        
+    }
+}
+
+    </script>
+</body>
+</html>
